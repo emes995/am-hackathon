@@ -8,7 +8,6 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <ToolBar prefHeight="40.0" prefWidth="200.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
@@ -31,13 +30,29 @@
             </AnchorPane>
           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="266.0" prefWidth="417.0">
                <children>
-                  <TableView layoutX="40.0" layoutY="35.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-                    <columns>
-                      <TableColumn prefWidth="75.0" text="Assets" />
-                      <TableColumn prefWidth="75.0" text="Liabilities" />
-                        <TableColumn prefWidth="75.0" text="Hedges" />
-                    </columns>
-                  </TableView>
+                  <SplitPane dividerPositions="0.5325301204819277" prefHeight="160.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <items>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="284.0" prefWidth="246.0">
+                           <children>
+                              <TableView prefHeight="284.0" prefWidth="197.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="-76.0" AnchorPane.topAnchor="0.0">
+                                <columns>
+                                  <TableColumn prefWidth="75.0" text="Assets" />
+                                  <TableColumn prefWidth="75.0" text="Liabilities" />
+                                    <TableColumn prefWidth="75.0" text="Hedges" />
+                                </columns>
+                              </TableView>
+                           </children>
+                        </AnchorPane>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="284.0" prefWidth="196.0">
+                           <children>
+                              <CheckBox layoutX="28.0" layoutY="26.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="103.0" text="Tax Optimizer" />
+                              <CheckBox layoutX="28.0" layoutY="56.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="103.0" text="Flatten DV01" />
+                              <CheckBox layoutX="26.0" layoutY="86.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="103.0" text="Flatten CR01" />
+                              <CheckBox layoutX="28.0" layoutY="118.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="134.0" text="Flatten Equity Delta" />
+                           </children>
+                        </AnchorPane>
+                    </items>
+                  </SplitPane>
                </children>
             </AnchorPane>
         </items>
