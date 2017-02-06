@@ -1,0 +1,41 @@
+{
+    "Items" :
+    [
+	{
+            "ID" : 1,
+            "Name" : "Mandate 1",
+            "Type" : "Mandate",
+	    "Attributes" : {
+		"Code" : 1234,
+		"Parent" : -1
+	    }
+	},
+	{
+            "ID" : 2,
+            "Name" : "Mandate 2",
+            "Type" : "Mandate",
+	    "Attributes" : {
+		"Code" : 2234,
+		"Parent" : -1
+	    }
+	},
+	{
+            "ID" : 3,
+            "Name" : "Mandate 3",
+            "Type" : "Mandate",
+	    "Attributes" : {
+		"Code" : 3234,
+		"Parent" : -1
+	    }
+	},
+	{
+            "ID" : 4,
+            "Name" : "Mandate 4",
+            "Type" : "Mandate",
+	    "Attributes" : {
+		"Code" : 4234,
+		"Parent" : 1
+	    }
+	}
+    ]    
+}

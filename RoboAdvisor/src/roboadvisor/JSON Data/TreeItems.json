@@ -1,0 +1,17 @@
+{
+    "TreeItems" :
+    [
+	{
+	    "Nodename": "Legal Entities",
+	    "Filename" : "LegalEntities.json"
+	},
+	{
+	    "Nodename": "Portfolio Managers",
+	    "Filename" : "PortfolioManager.json"
+	}
+	{
+	    "Nodename": "Portfolios",
+	    "Filename" : "Portfolio.json"
+	}
+    ]
+}

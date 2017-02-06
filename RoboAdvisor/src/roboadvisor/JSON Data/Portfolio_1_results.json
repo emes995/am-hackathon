@@ -1,0 +1,19 @@
+{
+    "Summaries" :
+    [
+	{
+	    "Market Value" : 3456789,
+	    "DV01" : 56000,
+	    "CR01" : 2000,
+	    "Avg Rating" : "AA",
+	    "Limits" : "Ok"
+	},
+	{
+	    "Market Value" : 3456789,
+	    "DV01" : 56000,
+	    "CR01" : 2000,
+	    "Avg Rating" : "AA",
+	    "Bmk Type" : "Composite"
+	}
+    ]
+}
